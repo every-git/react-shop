@@ -184,7 +184,7 @@ function App() {
           path="/"
           element={
             <div>
-            <div className="slider"></div>
+            <div className="slider" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/img/slider.jpg)`}}></div>
               <Title />
 
               <div className="container">

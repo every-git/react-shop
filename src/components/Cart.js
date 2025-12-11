@@ -51,7 +51,7 @@ function Cart() {
                     <td>
                       <Link to={isVeggie ? `/detail/veggie/${id}` : `/detail/${id}`}>
                         <img
-                          src={`img/${imgurl}`}
+                          src={`${process.env.PUBLIC_URL}/img/${imgurl}`}
                           style={smallProdcuctStyle}
                           alt={name}
                         />

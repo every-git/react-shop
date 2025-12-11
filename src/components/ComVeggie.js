@@ -9,7 +9,7 @@ const ComVeggie = (props) => {
     return (
     <div className="col-md-4" style={{marginBottom:"50px"}}>
         <Nav.Link className="c1" onClick={() => navigate(`/detail/veggie/${id}`)}>
-            <img src={imgUrl} width="80%" alt={title} />
+            <img src={process.env.PUBLIC_URL + '/' + imgUrl} width="80%" alt={title} />
             <h5 style={{marginTop:"10px"}}>{title}</h5>
             <span>{content}</span>
             <p>{price}</p>
